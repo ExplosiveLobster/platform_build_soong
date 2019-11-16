@@ -1053,3 +1053,7 @@ func (c *config) ProductHiddenAPIStubsTest() []string {
 func (c *deviceConfig) TargetFSConfigGen() []string {
 	return c.config.productVariables.TargetFSConfigGen
 }
+
+func (c *deviceConfig) TargetUsesGralloc1() bool {
+	return Bool(c.config.productVariables.TargetUsesGralloc1)
+}
